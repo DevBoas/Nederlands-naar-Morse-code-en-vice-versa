@@ -5,8 +5,8 @@ namespace Nederlands_naar_Morse_code_en_vice_versa
 {
     public partial class Form1 : Form
     {
-        string[] alphabet = new string[] {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
-        string[] morseAlphabet = new string[] {".-","-...","-...","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.", "--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
+        string[] alphabet = new string[] {" ","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+        string[] morseAlphabet = new string[] {"/",".-","-...","-...","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.", "--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
 
         public Form1()
         {
@@ -76,7 +76,6 @@ namespace Nederlands_naar_Morse_code_en_vice_versa
         private void ButtonToNL_Click(object sender, EventArgs e)
         {
             string input = TextBoxInput.Text;
-            //Losing in the converting process
             string output = myRecur(input, "");
           
             MessageBox.Show("OUTPUT = " + output);
